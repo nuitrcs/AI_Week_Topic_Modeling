@@ -66,7 +66,7 @@ Good luck! And don’t hesitate to ask questions or collaborate with others as y
 
 - Laws Dataset
 
-If you are working on a notebook in the `notebooks/` directory and you want to use the `laws_topic_model.csv` dataset, you can run the following command:
+If you are working on a notebook in the `exercises/` directory and you want to use the `laws_topic_model.csv` dataset, you can run the following command:
 
 ```
 import pandas as pd
