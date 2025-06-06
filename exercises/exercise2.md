@@ -66,15 +66,31 @@ Good luck! And don’t hesitate to ask questions or collaborate with others as y
 
 - Laws Dataset
 
+[source](https://enjalot.github.io/latent-scope/us-federal-laws)
+
 If you are working on a notebook in the `exercises/` directory and you want to use the `laws_topic_model.csv` dataset, you can run the following command:
 
 ```
 import pandas as pd
 
-laws = pd.read_csv("data/laws_topic_model.csv`)
+laws = pd.read_csv("data/laws_topic_model.csv")
+```
+
+- Hotel Reviews Dataset
+
+[source](https://data.mendeley.com/datasets/s62ycm698z/2)
+
+If you are working on a notebook in the `exercises/` directory and you want to use the `bali_hotel_reviews.csv` dataset, you can run the following command:
+
+```
+import pandas as pd
+
+laws = pd.read_csv("data/bali_hotel_reviews.csv")
 ```
 
 - News Headlines Dataset
+
+[source](https://huggingface.co/datasets/valurank/News_headlines)
 
 ```
 import pandas as pd
@@ -86,6 +102,8 @@ df = pd.concat([df1, df2], ignore_index=True)
 ```
 
 - 20 Newsgroups
+
+[source](https://scikit-learn.org/0.19/modules/generated/sklearn.datasets.fetch_20newsgroups.html#sklearn.datasets.fetch_20newsgroups)
 
 ```
 from sklearn.datasets import fetch_20newsgroups
