@@ -103,11 +103,7 @@ Use the code below to pull the data from huggingface using their API.  Note that
 
 ```
 import pandas as pd
-
-splits = {'train': 'final_headline_train_12000.csv', 'validation': 'final_headline_valid_1200.csv'}
-df1 = pd.read_csv("hf://datasets/valurank/News_headlines/" + splits["train"])
-df2 = pd.read_csv("hf://datasets/valurank/News_headlines/" + splits["validation"])
-df = pd.concat([df1, df2], ignore_index=True)
+df = pd.read_csv("hf://datasets/valurank/News_headlines/final_headline_train_12000.csv")
 ```
 
 ### 20 Newsgroups ([source](https://scikit-learn.org/0.19/modules/generated/sklearn.datasets.fetch_20newsgroups.html#sklearn.datasets.fetch_20newsgroups))
@@ -116,17 +112,5 @@ This is the same dataset that we used for our example and exercise 1. The exampl
 
 ```
 from sklearn.datasets import fetch_20newsgroups
-
 bunch = fetch_20newsgroups(remove=("headers","footers","quotes"))
-
-docs = bunch["data"]
-doc_labels = bunch["target"]
-
-df = pd.DataFrame({
-    "text": docs,
-    "labels": doc_labels
-})
-
-# create a label with text info
-df["labels_text"] = df["labels"].astype("category").cat.rename_categories({i:j for i,j in enumerate(bunch["target_names"])})
 ```
