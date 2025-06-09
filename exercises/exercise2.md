@@ -59,9 +59,9 @@ At the end of the day, we would like you to share your work with others. Below a
 - Topic modeling is often exploratory — it's okay to not find perfect topics on the first try!
 - Use visual tools (like `.visualize_topics()` in BERTopic) to understand your results.
 
-
-
 **Good luck! And don’t hesitate to ask questions or collaborate with others as you go.**
+
+---
 
 ## Datasets
 
@@ -80,7 +80,6 @@ If you are working in Colab, you can read in the file directly from GitHub using
 import pandas as pd
 laws = pd.read_csv('https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Model/refs/heads/main/exercises/data/laws_topic_model.csv')
 ```
----
 
 ### Hotel Reviews Dataset ([source](https://data.mendeley.com/datasets/s62ycm698z/2))
 
@@ -97,7 +96,6 @@ If you are working in Colab, you can read in the file directly from GitHub using
 import pandas as pd
 reviewsaws = pd.read_csv('https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Model/refs/heads/main/exercises/data/bali_hotel_reviews.csv')
 ```
----
 
 ### News Headlines Dataset ([source](https://huggingface.co/datasets/valurank/News_headlines))
 
@@ -111,8 +109,6 @@ df1 = pd.read_csv("hf://datasets/valurank/News_headlines/" + splits["train"])
 df2 = pd.read_csv("hf://datasets/valurank/News_headlines/" + splits["validation"])
 df = pd.concat([df1, df2], ignore_index=True)
 ```
-
----
 
 ### 20 Newsgroups ([source](https://scikit-learn.org/0.19/modules/generated/sklearn.datasets.fetch_20newsgroups.html#sklearn.datasets.fetch_20newsgroups))
 
