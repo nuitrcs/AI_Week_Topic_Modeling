@@ -7,6 +7,8 @@ Do you need to identify a set of themes from within a large collection of text d
 
 ## Links to workshop materials on Colab
 
+**NOTE:** If you are working in Colab, and you open a notebook following one of these links, please be sure to save your notebook to your own Google account after making changes.  (Otherwise your changes will be lost.)
+
 - [BERTopic demo notebook](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Model/blob/main/BERTopic-demo.ipynb)
 
 - [Exercise 1 notebook](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Model/blob/main/exercises/exercise1.ipynb)
