@@ -2,7 +2,7 @@
 
 In this exercise, you'll apply the topic modeling workflow to a new dataset of your choice. The goal is to deepen your understanding and get hands-on experience on the process. We encourage you to explore different models and parameter settings to find interesting patterns in the text data.
 
----
+
 
 ## Step 1: Choose Your Dataset
 
@@ -14,7 +14,7 @@ You have a few options for selecting your text data:
 
 **Tip:** Try to choose a dataset with enough textual content (at least several hundred documents)
 
----
+
 
 ## Step 2: Review and Apply the Topic Modeling Workflow
 
@@ -25,7 +25,7 @@ Use the slides, demo code, and insights from Exercise 1 to guide your implementa
 3. **Clustering**: Cluster the reduced embeddings using HDBSCAN or other clustering algorithms and change parameters as neede to retrieve the best clustering.
 4. **Representation**: Generate topic representations using BERTopic or other methods. Adjust parameters like the number of top words or the vectorizer settings.
 
----
+
 
 ## Step 3: Explore and Interpret Topics
 
@@ -33,7 +33,7 @@ Use the slides, demo code, and insights from Exercise 1 to guide your implementa
 - Are there obvious or surprising themes?
 - Remember that you may have to iterate many times, changing parameters for many individual steps in the workflow in order to retrieve your best set of topics.  We recommend changing one parameter at a time, checking how this effects your results, then moving on to another parameter.
 
----
+
 
 ## Step 4: Bonus – Try BERTopic Variations
 
@@ -41,7 +41,7 @@ Once you're comfortable with the basic setup and have found the best set of topi
 
 - **Dynamic Topic Modeling**: Visualize how topic prevalence changes over time ([docs](https://maartengr.github.io/BERTopic/getting_started/topicsovertime/topicsovertime.html)).  This may be an interesting option of your dataset has a column for time.
 - **Hierarchical Topic Modeling**: Create a visualization that lets you see the hierarchical nature of your topics. You can use this to decide if some topics should be merged together ([docs](https://maartengr.github.io/BERTopic/getting_started/hierarchicaltopics/hierarchicaltopics.html)).
----
+
 
 ## Deliverables
 
@@ -51,7 +51,7 @@ At the end of the day, we would like you to share your work with others. Below a
 - Visualizations: topic distributions, top words per topic, or topic evolution plots.
 - Notes on interesting or unexpected insights from your dataset.
 
----
+
 
 ## 💡 Tips
 
@@ -61,7 +61,7 @@ At the end of the day, we would like you to share your work with others. Below a
 
 **Good luck! And don’t hesitate to ask questions or collaborate with others as you go.**
 
----
+
 
 ## Datasets
 
