@@ -17,7 +17,7 @@ Do you need to identify a set of themes from within a large collection of text d
 If you are working on your local computer, we recommend that you setup of a conda environment for this workshop.  You can use the command below to do so:
 
 ```
-conda create --name topic-modeling-env python=3.12 jupyter matplotlib pandas numpy scikit-learn sentence-transformers umap-learn hdbscan bertopic
+conda create --name topic-modeling-env python=3.12 jupyter matplotlib pandas numpy=2.2 scikit-learn sentence-transformers umap-learn hdbscan bertopic
 
 ```
 
