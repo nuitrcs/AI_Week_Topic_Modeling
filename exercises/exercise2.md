@@ -101,7 +101,7 @@ reviewsaws = pd.read_csv('https://raw.githubusercontent.com/nuitrcs/AI_Week_Topi
 
 ### News Headlines Dataset ([source](https://huggingface.co/datasets/valurank/News_headlines))
 
-[NEEDS INSTRUCTIONS FOR HOW TO CREATE A `HF_TOKEN`]
+Use the code below to pull the data from huggingface using their API.  Note that you may receive a warning in your notebook saying that the "secret `HF_TOKEN` does not exist"; this is fine.  You do not need to authenticate or create a token to access this dataset.  The data should still be pulled into your notebook and available in the df variable.
 
 ```
 import pandas as pd
