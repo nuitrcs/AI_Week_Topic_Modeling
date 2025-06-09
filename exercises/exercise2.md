@@ -94,7 +94,7 @@ If you are working in Colab, you can read in the file directly from GitHub using
 
 ```
 import pandas as pd
-reviewsaws = pd.read_csv('https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Model/refs/heads/main/exercises/data/bali_hotel_reviews.csv')
+reviews = pd.read_csv('https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Model/refs/heads/main/exercises/data/bali_hotel_reviews.csv')
 ```
 
 ### News Headlines Dataset ([source](https://huggingface.co/datasets/valurank/News_headlines))
