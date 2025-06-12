@@ -97,13 +97,13 @@ import pandas as pd
 reviews = pd.read_csv('https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Model/refs/heads/main/exercises/data/bali_hotel_reviews.csv')
 ```
 
-### News Headlines Dataset ([source](https://huggingface.co/datasets/valurank/News_headlines))
+### UCI Product Classification Dataset ([source](https://archive.ics.uci.edu/dataset/837/product+classification+and+clustering))
 
-Use the code below to pull the data from huggingface using their API.  Note that you may receive a warning in your notebook saying that the "secret `HF_TOKEN` does not exist"; this is fine.  You do not need to authenticate or create a token to access this dataset.  The data should still be pulled into your notebook and available in the df variable.
+This dataset comes from the UC Irvine Machine Learning Repository.  You can download the csv file directly from the source website linked above.  We have also downloaded it to our data directory, and you can read in that file using the following code:
 
 ```
 import pandas as pd
-df = pd.read_csv("hf://datasets/valurank/News_headlines/final_headline_train_12000.csv")
+df = pd.read_csv('data/pricerunner_aggregate.csv')
 ```
 
 ### 20 Newsgroups ([source](https://scikit-learn.org/0.19/modules/generated/sklearn.datasets.fetch_20newsgroups.html#sklearn.datasets.fetch_20newsgroups))
