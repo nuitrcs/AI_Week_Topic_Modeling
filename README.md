@@ -9,9 +9,9 @@ Do you need to identify a set of themes from within a large collection of text d
 
 **NOTE:** If you are working in Colab, and you open a notebook following one of these links, please be sure to save your notebook to your own Google account after making changes.  (Otherwise your changes will be lost.)
 
-- [BERTopic demo notebook](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Model/blob/main/BERTopic-demo.ipynb)  [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Model/blob/main/BERTopic-demo.ipynb)
+- [BERTopic demo notebook](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Modeling/blob/main/BERTopic-demo.ipynb)  [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Modeling/blob/main/BERTopic-demo.ipynb)
 
-- [Exercise 1 notebook](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Model/blob/main/exercises/exercise1.ipynb)  [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Model/blob/main/exercises/exercise1.ipynb)
+- [Exercise 1 notebook](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Modeling/blob/main/exercises/exercise1.ipynb)  [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nuitrcs/AI_Week_Topic_Modeling/blob/main/exercises/exercise1.ipynb)
 
 
 ## If you want to work on your local computer 
