@@ -23,7 +23,7 @@ Please join one of the following five groups.  Each group will explore a differe
 
 - Group 1: Laws
 - Group 2: Hotel reviews
-- Group 3: Short Jokes
+- Group 3: Product classification 
 - Group 4: 20 Newsgroups
 - Group 5: Choose your own datset
 

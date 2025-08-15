@@ -65,21 +65,25 @@ At the end of the day, we would like you to share your work with others. Below a
 
 ## Datasets
 
+I provide code below to get you started reading in the data and identifying the "docs" that you would pass to BERTopic.  The code below assumes that you are working on a notebook in the `exercises/` directory on your local computer.  If you are working on Colab, you can either upload the data directory using the sidebar, or you can read directory from GitHub by prepending the following url : `https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Modeling/refs/heads/main/exercises/` to the `pd.read_csv` command provided in the subsections below, e.g., for the law dataset you would use the code 
+
+```
+
+df = pd.read_csv("https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Modeling/refs/heads/main/exercises/data/us_federal_laws.csv")
+
+```
+
+
 ### Laws Dataset ([source](https://enjalot.github.io/latent-scope/us-federal-laws))
 
-If you are working on a notebook in the `exercises/` directory and you want to use the `laws_topic_model.csv` dataset, you can run the following command:
+
 
 ```
 import pandas as pd
-laws = pd.read_csv("data/laws_topic_model.csv")
+laws = pd.read_csv("data/us_federal_laws.csv")
+docs = laws["Title"].to_list()
 ```
 
-If you are working in Colab, you can read in the file directly from GitHub using pandas:
-
-```
-import pandas as pd
-laws = pd.read_csv('https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Model/refs/heads/main/exercises/data/laws_topic_model.csv')
-```
 
 ### Hotel Reviews Dataset ([source](https://data.mendeley.com/datasets/s62ycm698z/2))
 
@@ -88,13 +92,7 @@ If you are working on a notebook in the `exercises/` directory and you want to u
 ```
 import pandas as pd
 reviews = pd.read_csv("data/bali_hotel_reviews.csv")
-```
-
-If you are working in Colab, you can read in the file directly from GitHub using pandas:
-
-```
-import pandas as pd
-reviews = pd.read_csv('https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Model/refs/heads/main/exercises/data/bali_hotel_reviews.csv')
+docs = reviews["Review"].to_list()
 ```
 
 ### UCI Product Classification Dataset ([source](https://archive.ics.uci.edu/dataset/837/product+classification+and+clustering))
@@ -103,14 +101,16 @@ This dataset comes from the UC Irvine Machine Learning Repository.  You can down
 
 ```
 import pandas as pd
-df = pd.read_csv('data/pricerunner_aggregate.csv')
+df = pd.read_csv("data/pricerunner_aggregate.csv")
+docs = df["Product Title"].to_list()
 ```
 
 ### 20 Newsgroups ([source](https://scikit-learn.org/0.19/modules/generated/sklearn.datasets.fetch_20newsgroups.html#sklearn.datasets.fetch_20newsgroups))
 
-This is the same dataset that we used for our example and exercise 1. The example code below extracts all available categories, but you can also limit the categories as we did in our previous code. 
+This is the same dataset that we used for our example and exercise 1. The example code below extracts all available categories, but you can also limit the categories as we did in our previous code (e.g., see the `supplementary_code.ipynb` file in this repo). 
 
 ```
 from sklearn.datasets import fetch_20newsgroups
 bunch = fetch_20newsgroups(remove=("headers","footers","quotes"))
+docs = bunch["data"]
 ```
