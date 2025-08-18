@@ -1,6 +1,6 @@
 # Exercise 2: Applying Topic Modeling to New Text Data
 
-In this exercise, you'll apply the topic modeling workflow to a new dataset of your choice. The goal is to deepen your understanding and get hands-on experience on the process. We encourage you to explore different models and parameter settings to find interesting patterns in the text data.
+In this exercise, you'll apply the topic modeling workflow to a new dataset of your choice. The goal is to deepen your understanding and get hands-on experience on the process. We encourage you to explore different models and parameter settings to find interesting patterns in the text data.  If your feel comfortable doing so, we encourage you to form groups and work together.
 
 
 
@@ -8,7 +8,7 @@ In this exercise, you'll apply the topic modeling workflow to a new dataset of y
 
 You have a few options for selecting your text data:
 
-- Preloaded datasets: Several datasets are prepared and available for you in the `data/` folder in this repo. If you decide to use one of these datasets, you can read in the dataset using the `pandas` Python package. We also found some datasets on huggingface that you can easily retrieve to your system via the huggingface API. Examples for reading in the preloaded datasets is provided at the end of this document.
+- Preloaded datasets: Several datasets are prepared and available for you in the `data/` folder in this repo. If you decide to use one of these datasets, you can read in the dataset using the `pandas` Python package. Examples for reading in these datasets are provided at the end of this document.
 
 - Custom dataset: You are also welcome to find and use your own text dataset.
 
@@ -39,17 +39,19 @@ Use the slides, demo code, and insights from Exercise 1 to guide your implementa
 
 Once you're comfortable with the basic setup and have found the best set of topics you can for your dataset, push further by exploring advanced features in BERTopic. For example:
 
-- **Dynamic Topic Modeling**: Visualize how topic prevalence changes over time ([docs](https://maartengr.github.io/BERTopic/getting_started/topicsovertime/topicsovertime.html)).  This may be an interesting option of your dataset has a column for time.
+- **Dynamic Topic Modeling**: Visualize how topic prevalence changes over time ([docs](https://maartengr.github.io/BERTopic/getting_started/topicsovertime/topicsovertime.html)).  This may be an interesting option if your dataset has a column for time.
 - **Hierarchical Topic Modeling**: Create a visualization that lets you see the hierarchical nature of your topics. You can use this to decide if some topics should be merged together ([docs](https://maartengr.github.io/BERTopic/getting_started/hierarchicaltopics/hierarchicaltopics.html)).
 
 
 ## Deliverables
 
-At the end of the day, we would like you to share your work with others. Below are examples of the materials that you could prepare to demonstrate your approach and what interesting findings you made during the exercise.  (You do not have to produce all of these materials.)
+At the end of the day, we would like you to share your work with the class. Below are examples of the materials that you could prepare to demonstrate your approach and what interesting findings you made during the exercise.  (You do not have to produce all of these materials.)
 
 - A brief write-up or notebook summarizing your topic modeling process.
 - Visualizations: topic distributions, top words per topic, or topic evolution plots.
 - Notes on interesting or unexpected insights from your dataset.
+
+(We may not have time for everyone to present individually on their own results, so we'll ask for volunteer first :) 
 
 
 
@@ -65,7 +67,7 @@ At the end of the day, we would like you to share your work with others. Below a
 
 ## Datasets
 
-I provide code below to get you started reading in the data and identifying the "docs" that you would pass to BERTopic.  The code below assumes that you are working on a notebook in the `exercises/` directory on your local computer.  If you are working on Colab, you can either upload the data directory using the sidebar, or you can read directory from GitHub by prepending the following url : `https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Modeling/refs/heads/main/exercises/` to the `pd.read_csv` command provided in the subsections below, e.g., for the law dataset you would use the code 
+We provide code below to get you started reading in the data and identifying the "docs" that you would pass to BERTopic.  The code below assumes that you are working on a notebook in the `exercises/` directory on your local computer.  If you are working on Colab, you can either upload the data directory using the Colab sidebar, or you can read directly from GitHub by prepending the following url : `https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Modeling/refs/heads/main/exercises/` to the `pd.read_csv` command provided in the subsections below, e.g., for the law dataset you would use the code 
 
 ```
 
