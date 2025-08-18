@@ -20,10 +20,10 @@ You have a few options for selecting your text data:
 
 Use the slides, demo code, and insights from Exercise 1 to guide your implementation. Your main steps include:
 
-1. **Embedding**: Use a SentenceTransformer model to convert your documents into vector representations. Try comparing models like `all-MiniLM-L6-v2`, `paraphrase-MPNet`, etc.
-2. **Dimensionality Reduction**: Apply techniques such as UMAP to reduce the embedding dimensionality. Tune parameters like `n_neighbors` or `min_dist` to get optimal results.
-3. **Clustering**: Cluster the reduced embeddings using HDBSCAN or other clustering algorithms and change parameters as neede to retrieve the best clustering.
-4. **Representation**: Generate topic representations using BERTopic or other methods. Adjust parameters like the number of top words or the vectorizer settings.
+1. **Embedding**: Use a SentenceTransformer model to convert your documents into vector representations. Try comparing models like `all-MiniLM-L6-v2`, `all-mpnet-base-v2`, etc.  See the BERTopic documentation [here](https://maartengr.github.io/BERTopic/getting_started/embeddings/embeddings.html).
+2. **Dimension reduction**: Apply `UMAP` or other tools (e.g., `PCA`, `t-SNE`) to reduce the embedding dimensionality. Tune parameters like to get optimal results.  See the BERTopic documentation [here](https://maartengr.github.io/BERTopic/getting_started/dim_reduction/dim_reduction.html).
+3. **Clustering**: Cluster the reduced embeddings using `HDBSCAN` or other clustering algorithms (e.g., `k-Means`) and change parameters as needed to retrieve the best clustering. See the BERTopic documentation [here](https://maartengr.github.io/BERTopic/getting_started/clustering/clustering.html).
+4. **Representation**: Generate topic representations using BERTopic or other methods. Adjust parameters like the number of top words or the vectorizer settings.  See the BERTopic documentation [here](https://maartengr.github.io/BERTopic/getting_started/best_practices/best_practices.html#improving-default-representation) and [here](https://maartengr.github.io/BERTopic/getting_started/representation/representation.html).
 
 
 
@@ -55,7 +55,7 @@ At the end of the day, we would like you to share your work with others. Below a
 
 ## 💡 Tips
 
-- Preprocessing is often an important step. Explore the raw text data first and check to see if there are texts that are empty, full of blanks, or too short that it doesn't have any meaningful content.  If so, you can write code (like in our example notebooks) to remove rows of your dataframe that don't have meaningful content.
+- Preprocessing is often an important step. Explore the raw text data first and check to see if there are texts that are empty, full of blanks, or too short that it doesn't have any meaningful content.  If so, you can write code (like in our `supplementary_code.ipynb` notebook) to remove rows of your dataframe that don't have meaningful content.
 - Topic modeling is often exploratory — it's okay to not find perfect topics on the first try!
 - Use visual tools (like `.visualize_topics()` in BERTopic) to understand your results.
 
@@ -76,7 +76,7 @@ df = pd.read_csv("https://raw.githubusercontent.com/nuitrcs/AI_Week_Topic_Modeli
 
 ### Laws Dataset ([source](https://enjalot.github.io/latent-scope/us-federal-laws))
 
-
+**Example Research Question:** What are the most common topics in US Federal Laws?  How does the proportion of laws for each of these topics change with time?
 
 ```
 import pandas as pd
@@ -87,7 +87,7 @@ docs = laws["Title"].to_list()
 
 ### Hotel Reviews Dataset ([source](https://data.mendeley.com/datasets/s62ycm698z/2))
 
-If you are working on a notebook in the `exercises/` directory and you want to use the `bali_hotel_reviews.csv` dataset, you can run the following command:
+**Example Research Question:** What are the most common themes that guests include in their hotel reviews?  What are the most common negative reviews?  (Can we make recommendations to the company for improvements based on these results?)  Can we group these topics together hierarchically?
 
 ```
 import pandas as pd
@@ -97,7 +97,7 @@ docs = reviews["Review"].to_list()
 
 ### UCI Product Classification Dataset ([source](https://archive.ics.uci.edu/dataset/837/product+classification+and+clustering))
 
-This dataset comes from the UC Irvine Machine Learning Repository.  You can download the csv file directly from the source website linked above.  We have also downloaded it to our data directory, and you can read in that file using the following code:
+**Example Research Question:** Can we use product titles, as might be common on e-commerce websites, to group similar products together in order to provide an end user with comparisons of similar products (e.g., to provide recommendations and/or to return quality search results for their queries)?  Can we group these products together hierarchically?
 
 ```
 import pandas as pd
@@ -105,9 +105,11 @@ df = pd.read_csv("data/pricerunner_aggregate.csv")
 docs = df["Product Title"].to_list()
 ```
 
-### 20 Newsgroups ([source](https://scikit-learn.org/0.19/modules/generated/sklearn.datasets.fetch_20newsgroups.html#sklearn.datasets.fetch_20newsgroups))
+### 20 Newsgroups ([source](https://scikit-learn.org/stable/datasets/real_world.html#newsgroups-dataset))
 
 This is the same dataset that we used for our example and exercise 1. The example code below extracts all available categories, but you can also limit the categories as we did in our previous code (e.g., see the `supplementary_code.ipynb` file in this repo). 
+
+**Example Research Question:** What topics are people discussing currently on the internet in forums/newgroups?  How do these topics relate to each other hierarchically?
 
 ```
 from sklearn.datasets import fetch_20newsgroups
