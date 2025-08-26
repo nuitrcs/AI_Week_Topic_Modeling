@@ -1,6 +1,6 @@
 # Summer 2025 AI Week : Topic Modeling to Categorize Text Documents 
 
-*September 3, 2025*
+*September 2, 2025*
 
 Do you need to identify a set of themes from within a large collection of text documents?  If so, topic modeling can help.  For example, topic modeling can be used to identify recurring themes in news articles, discover research trends in scientific publications, or analyze public sentiment across social media posts. In this workshop, you will get a high-level overview of different existing techniques used for topic modeling which focuses on modern AI-driven approaches. You will also have ample time to work through step-by-step hands-on exercises to learn how to leverage AI-based topic modeling analysis techniques using real data through Python. While previous knowledge of machine learning / text analysis packages in Python is not strictly required, familiarity with the Python programming language is encouraged. 
 
